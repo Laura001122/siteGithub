@@ -241,3 +241,76 @@ tr:not(:last-child) td {
         margin-top: 1.3rem;
     }
 }
+
+.site-footer {
+    background: #082c2f;
+    color: #c5dbe7;
+    padding: 2.2rem 1rem 1.7rem;
+    margin-top: 24px;
+}
+
+.footer-content {
+    width: min(1120px, 94vw);
+    margin: 0 auto;
+    display: grid;
+    gap: 0.9rem;
+    text-align: center;
+}
+
+.footer-brand {
+    color: #e0f8ff;
+}
+
+.footer-brand strong {
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
+
+.footer-brand p {
+    margin-top: 0.35rem;
+    color: #9ec3d6;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #96e6ff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.38rem 0.65rem;
+    border-radius: 9px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    background: rgba(153, 226, 255, 0.18);
+    transform: translateY(-1px);
+}
+
+.footer-info {
+    color: #a7cbd8;
+    font-size: 0.93rem;
+}
+
+.site-footer small {
+    display: block;
+    color: #8da8b8;
+    margin-top: 0.35rem;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        text-align: center;
+    }
+    .footer-links {
+        gap: 0.5rem;
+    }
+}
